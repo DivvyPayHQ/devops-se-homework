@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package planetexpress;
+option go_package = "pkg/planetexpress";
+
+// import "crew.proto";
+// import "delivery.proto";
+
+message Ship {
+  enum FuelLevel {
+      EMPTY = 0;
+      LOW = 1;
+      FULL = 2;
+  }
+
+  string name = 1;
+  string location = 2;
+  FuelLevel fuel_level = 3;
+
+// Crew crew = 4;
+// Delivery delivery = 5;
+}
+
+message GetShipResponse {
+  Ship ship = 1;
+}

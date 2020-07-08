@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package planetexpress;
+option go_package = "pkg/planetexpress";
+
+import "ship.proto";
+import "google/protobuf/empty.proto";
+
+service PlanetExpress {
+    rpc GetShip(google.protobuf.Empty) returns (GetShipResponse) {}
+
+    // rpc GetCrew(google.protobuf.Empty) returns (GetCrewResponse) {}
+
+    // rpc ListDeliveries(google.protobuf.Empty) returns (ListDeliveriesResponse) {}
+    // rpc GetDelivery(GetDeliveryRequest) returns (GetDeliveryResponse) {}
+}

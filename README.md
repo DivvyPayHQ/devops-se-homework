@@ -5,7 +5,7 @@ Planet Express headquarters that can communicate with Planet Express ship via gR
 
 ## Setup
 
-When you are done shopping for lightspeed briefs you decide to setup the new project. You realize that some of it is already set up for you. The `./headquarter` directory contains the gateway/client code and the
+When you are done shopping for lightspeed briefs you decide to setup the new project. You realize that some of it is already set up for you. The `./headquarters` directory contains the gateway/client code and the
 `./ship` directory contains the server code.
 
 1. Create a gitlab repo called `planet-express`
@@ -19,10 +19,9 @@ When you are done shopping for lightspeed briefs you decide to setup the new pro
 6. Run `go mod init gitlab.com/<gitlab-username>/planet-express`
 7. Your go mod should look something like the included `_go.mod` file (delete this file when done)
 8. Fix the import statements in `./ship/main.go` and `./headquarters/main.go` (the lines commented like so `// pb "gitlab.com/<gitlab-username>/planet-express/ship/pkg/planetexpress"`)
-9. Validate that you can genarate go code by running `make`
-10. Validate that you can build by running `make`
-11. Validate you have the executables `./ship/ship` and `./headquarters/headquarters`
-12. Run the server `./ship/ship` and the client `./headquarters/headquarters` in separate terminal windows and confirm the output.
+9. Validate that you can build and genarate go code by running `make`
+10. Validate you have the executables `./ship/ship` and `./headquarters/headquarters`
+11. Run the server `./ship/ship` and the client `./headquarters/headquarters` in separate terminal windows and confirm the output.
 
 ## Generate Go Code
 

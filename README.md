@@ -55,7 +55,7 @@ Time Estimate: 4 hours
 3. Add GraphQL support to the gateway (headquarters client). A good library for this is https://github.com/graph-gophers/graphql-go
 4. Map a graphql resource and endpoint to a gRPC call such that you can use a GraphQL client to get data from the ship backend.
 
-### Bite my shiny metal a$$
+### Bite my shiny metal a$$ (extra, extra)
 
 Time Estimate: 4 hours
 
@@ -65,7 +65,7 @@ Time Estimate: 4 hours
 ** These would really impress us here at Planet Express! **
 
 ## Deliverables
-Make your repository public and share the repo url with Justin Sharp.
+Make your repository public and share the repo url with Divvy's recruiter.
 
 ## Helpful Resources
 - https://grpc.io/docs/languages/go/quickstart/
@@ -73,3 +73,6 @@ Make your repository public and share the repo url with Justin Sharp.
 - https://cloud.google.com/apis/design
 - https://github.com/graph-gophers/graphql-go
 - https://reactjs.org/docs/create-a-new-react-app.html
+
+## Questions
+If you find errors or otherwise need clarification on anything in the excercise, please reach out to Justin Sharp <justin.sharp@divvypay.com>.

@@ -36,6 +36,8 @@ A makefile has been provided for you that will generate go code with the protoc 
 
 ## Your Assignment
 
+Time Estimate: 3 hours
+
 The basic client and server code has been provided for you. Your job is to do the following:
 
 1. Implement `crew.proto` and `delivery.proto` and the functions listed in `planet_express_service.proto`
@@ -46,12 +48,18 @@ The basic client and server code has been provided for you. Your job is to do th
 5. Add a dockerfile to `./ship` so that we can run the server with docker.
 
 ### Above and Beyond
+
+Time Estimate: 4 hours
+
 1. Provide a basic helm template for the `./ship` server. This should contain a kubernetes deployment and service. We should be able to port-forward your service to call the `./ship` rpc functions.
 2. Add additional protobuf resources like `ShipEngine`. You can get creative with this.
 3. Add GraphQL support to the gateway (headquarters client). A good library for this is https://github.com/graph-gophers/graphql-go
 4. Map a graphql resource and endpoint to a gRPC call such that you can use a GraphQL client to get data from the ship backend.
 
 ### Bite my shiny metal a$$
+
+Time Estimate: 4 hours
+
 1. Add a simple React SPA that displays data about the ship using GraphQL to communicate with the gateway (headquarters service). You can put this in the `./dashboard` directory.
 2. Add some go unit tests to the ship server.
 

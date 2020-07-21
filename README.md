@@ -1,7 +1,10 @@
 # Planet Express
 
-You are contracted to refactor Professor Farnsworth's legacy client/server code, and you decide to spice weasel (BAM!) things up with K8s, gRPC, and GraphQL. The professor wants to run a gateway service at the
-Planet Express headquarters that can communicate with Planet Express ship via gRPC. Furthermore, he wants a nice React UI to show data about the ship, deliveries, crew members, etc that will communicate with the gateway service via GraphQL.
+You are contracted to refactor Professor Farnsworth's legacy client/server code, and you decide to spice weasel (BAM!) things up with K8s, gRPC, and GraphQL.
+The professor wants to run a gateway service at the Planet Express headquarters that can communicate with Planet Express ship via gRPC.
+Furthermore, he wants a nice React UI to show data about the ship, deliveries, crew members, etc that will communicate with the gateway service via GraphQL.
+
+In this architecture the ship is a backend service, the headquarters is a api gateway, and the frontend is a React SPA.
 
 ## Setup
 
@@ -53,8 +56,8 @@ Time Estimate: 4 hours
 
 1. Provide a basic helm template for the `./ship` server. This should contain a kubernetes deployment and service. We should be able to port-forward your service to call the `./ship` rpc functions.
 2. Add additional protobuf resources like `ShipEngine`. You can get creative with this.
-3. Add GraphQL support to the gateway (headquarters client). A good library for this is https://github.com/graph-gophers/graphql-go
-4. Map a graphql resource and endpoint to a gRPC call such that you can use a GraphQL client to get data from the ship backend.
+3. Add graphql support to the api gateway (headquarters). A good library for this is https://github.com/graph-gophers/graphql-go. Map a graphql endpoint/resource to a gRPC call, like for GetShip.
+A GraphQL client should be able to query data from the headquarters which in turn resolves the query by getting data from the ship backend via gRPC.
 
 ### Bite my shiny metal a$$
 
